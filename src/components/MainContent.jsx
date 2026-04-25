@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Edit2, BarChart2, PieChart, Map, Clock, Users, X, 
-  ChevronLeft, ChevronRight, Layout, ExternalLink, 
+import {
+  Edit2, BarChart2, PieChart, Map, Clock, Users, X,
+  ChevronLeft, ChevronRight, Layout, ExternalLink,
   ShoppingBag, UserCircle, Car, Database, Layers, Target, FileText,
   Table as TableIcon, FileSpreadsheet, Monitor, Landmark, Play,
   Menu, Github, Search, Plus, CircleDot, GitPullRequest, BookOpen, Inbox
@@ -92,7 +92,7 @@ const MainContent = () => {
       title: 'Netflix Churn Prediction',
       icon: <Play size={20} />,
       desc: 'Analyzing user behavior patterns, watch hours, and subscription types to predict and mitigate customer attrition.',
-      images: ['/netflix/image1.png', '/netflix/image2.png', '/netflix/image3.png', '/netflix/image4.png', '/netflix/image5.png'],
+      images: ['/netflix/image1.png'],
       link: 'pending',
       themeColor: '#e50914',
       glowColor: 'rgba(229, 9, 20, 0.3)',
@@ -163,9 +163,9 @@ const MainContent = () => {
   const handleLinkClick = (e, module) => {
     if (module.link === 'pending') {
       e.preventDefault();
-      const msg = module.id === 'uber-datasets' ? "The Uber Analysis link is on the way! 🚗💨" : 
-                  module.id === 'bank-loan' ? "Bank Loan analysis dashboard is being finalized! 🏦📈" :
-                  "Netflix Churn Prediction link is on the way! 🍿📉";
+      const msg = module.id === 'uber-datasets' ? "The Uber Analysis link is on the way! 🚗💨" :
+        module.id === 'bank-loan' ? "Bank Loan analysis dashboard is being finalized! 🏦📈" :
+          "Netflix Churn Prediction link is on the way! 🍿📉";
       showSnackbar(msg);
     }
   };
@@ -194,9 +194,9 @@ const MainContent = () => {
               <div className="absolute left-3 top-1/2 -translate-y-1/2 text-[#7d8590]">
                 <Search size={14} />
               </div>
-              <input 
-                type="text" 
-                placeholder="Type / to search" 
+              <input
+                type="text"
+                placeholder="Type / to search"
                 readOnly
                 className="bg-[#0d1117] border border-[#30363d] rounded-md pl-9 pr-2 py-1.5 text-xs w-64 text-[#7d8590] focus:outline-none focus:border-[#1f6feb] transition-all cursor-pointer"
               />
@@ -388,12 +388,12 @@ const MainContent = () => {
                 <button
                   onClick={(e) => { e.stopPropagation(); setViewMode('description'); }}
                   className="px-6 py-2 rounded-sm text-xs font-black uppercase tracking-tighter transition-all flex items-center gap-2 relative z-10"
-                  style={{ 
+                  style={{
                     color: viewMode === 'description' ? '#000000' : 'rgba(255,255,255,0.4)'
                   }}
                 >
                   {viewMode === 'description' && (
-                    <motion.div 
+                    <motion.div
                       layoutId="activePill"
                       className="absolute inset-0 rounded-sm shadow-lg"
                       style={{ backgroundColor: activeModule.themeColor }}
@@ -407,12 +407,12 @@ const MainContent = () => {
                 <button
                   onClick={(e) => { e.stopPropagation(); setViewMode('gallery'); }}
                   className="px-6 py-2 rounded-sm text-xs font-black uppercase tracking-tighter transition-all flex items-center gap-2 relative z-10"
-                  style={{ 
+                  style={{
                     color: viewMode === 'gallery' ? '#000000' : 'rgba(255,255,255,0.4)'
                   }}
                 >
                   {viewMode === 'gallery' && (
-                    <motion.div 
+                    <motion.div
                       layoutId="activePill"
                       className="absolute inset-0 rounded-sm shadow-lg"
                       style={{ backgroundColor: activeModule.themeColor }}
@@ -426,12 +426,12 @@ const MainContent = () => {
                 <button
                   onClick={(e) => { e.stopPropagation(); setViewMode('dataset'); }}
                   className="px-6 py-2 rounded-sm text-xs font-black uppercase tracking-tighter transition-all flex items-center gap-2 relative z-10"
-                  style={{ 
+                  style={{
                     color: viewMode === 'dataset' ? '#000000' : 'rgba(255,255,255,0.4)'
                   }}
                 >
                   {viewMode === 'dataset' && (
-                    <motion.div 
+                    <motion.div
                       layoutId="activePill"
                       className="absolute inset-0 rounded-sm shadow-lg"
                       style={{ backgroundColor: activeModule.themeColor }}
@@ -456,7 +456,7 @@ const MainContent = () => {
                       <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-6 mb-12">
                           <div className="p-6 rounded-2xl bg-white/5 border border-white/10 shadow-2xl">
-                             <div className="text-6xl">{activeModule.logo}</div>
+                            <div className="text-6xl">{activeModule.logo}</div>
                           </div>
                           <div>
                             <h2 className="text-5xl font-black text-white tracking-tighter mb-2">{activeModule.title}</h2>
@@ -478,7 +478,7 @@ const MainContent = () => {
                                 {activeModule.desc}
                               </p>
                             </section>
-                            
+
                             <section>
                               <h4 className="text-[#8b949e] uppercase text-[10px] font-black tracking-[0.2em] mb-4 flex items-center gap-2">
                                 <Target size={14} /> Key Objective
@@ -599,7 +599,7 @@ const MainContent = () => {
                         onClick={() => { setDirection(i > imageIndex ? 1 : -1); setImageIndex(i); }}
                         whileHover={{ scale: 1.3 }}
                         className="h-2 rounded-full transition-all cursor-pointer"
-                        style={{ 
+                        style={{
                           width: i === imageIndex ? '40px' : '8px',
                           backgroundColor: i === imageIndex ? activeModule.themeColor : 'rgba(255,255,255,0.2)'
                         }}
@@ -631,7 +631,7 @@ const MainContent = () => {
                     }}
                   >
                     View Project <ExternalLink size={14} />
-                    </motion.a>
+                  </motion.a>
                 </div>
               </motion.div>
             </motion.div>
