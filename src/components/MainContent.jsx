@@ -69,7 +69,7 @@ const MainContent = () => {
       title: 'Bank Loan Analysis',
       icon: <Landmark size={20} />,
       desc: 'Predictive modeling and risk assessment for personal loans, analyzing credit scores, income levels, and delinquency history.',
-      images: ['/bank_loan/image1.png'],
+      images: ['/bank_loan/analysis_dashboard.png', '/bank_loan/image2.png', '/bank_loan/image3.png'],
       link: 'pending',
       themeColor: '#238636',
       glowColor: 'rgba(35, 134, 54, 0.3)',
