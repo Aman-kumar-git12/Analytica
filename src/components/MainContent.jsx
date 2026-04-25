@@ -451,9 +451,9 @@ const MainContent = () => {
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: 20 }}
-                      className="w-full h-full p-12 overflow-auto custom-scrollbar bg-[#0d1117]"
+                      className="w-full h-full p-8 md:p-12 overflow-auto custom-scrollbar bg-[#0d1117]"
                     >
-                      <div className="max-w-4xl mx-auto">
+                      <div className="max-w-6xl mx-auto">
                         <div className="flex items-center gap-6 mb-12">
                           <div className="p-6 rounded-2xl bg-white/5 border border-white/10 shadow-2xl">
                             <div className="text-6xl">{activeModule.logo}</div>
@@ -510,26 +510,28 @@ const MainContent = () => {
                       </div>
                     </motion.div>
                   ) : viewMode === 'gallery' ? (
-                    <motion.img
-                      key={imageIndex}
-                      custom={direction}
-                      variants={slideVariants}
-                      initial="enter"
-                      animate="center"
-                      exit="exit"
-                      src={activeModule.images[imageIndex]}
-                      alt={`${activeModule.title} ${imageIndex + 1}`}
-                      className="absolute max-w-full max-h-full object-contain pointer-events-none"
-                    />
-                  ) : (
+                    <div className="w-full h-full p-8 md:p-12 flex items-center justify-center bg-[#0d1117]">
+                      <motion.img
+                        key={imageIndex}
+                        custom={direction}
+                        variants={slideVariants}
+                        initial="enter"
+                        animate="center"
+                        exit="exit"
+                        src={activeModule.images[imageIndex]}
+                        alt={`${activeModule.title} ${imageIndex + 1}`}
+                        className="max-w-full max-h-full object-contain pointer-events-none rounded-xl shadow-2xl"
+                      />
+                    </div>
                     <motion.div
                       key="dataset"
                       initial={{ opacity: 0, scale: 0.9, filter: 'blur(10px)' }}
                       animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
                       exit={{ opacity: 0, scale: 1.1, filter: 'blur(10px)' }}
                       transition={{ duration: 0.4, ease: "easeOut" }}
-                      className="w-full h-full p-8 overflow-auto custom-scrollbar bg-[#0d1117]"
+                      className="w-full h-full p-8 md:p-12 overflow-auto custom-scrollbar bg-[#0d1117]"
                     >
+                      <div className="max-w-6xl mx-auto">
                       <div className="flex items-center justify-between mb-8">
                         <h3 className="text-2xl font-bold text-white flex items-center gap-3">
                           <Database style={{ color: activeModule.themeColor }} /> {activeModule.title} Raw Data Preview
