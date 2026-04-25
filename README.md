@@ -41,12 +41,12 @@
 
 ## 📂 Project Modules
 
-| Module | Core Problem Solved | Data Focus |
-| :--- | :--- | :--- |
-| **🏦 Bank Loan** | Credit Risk & Default Prediction | Income, Credit Score, Delinquency |
-| **🍿 Netflix** | User Retention & Churn Mitigation | Watch Hours, Regional Loyalty |
-| **🚗 Uber** | Urban Mobility & Demand Allocation | Geospatial Trip IDs, Fare Density |
-| **🛍️ Blinkit** | Inventory Churn & SKU Popularity | SKUs, Delivery Lead Times |
+| Module | Core Problem Solved | Data Focus | Tooling |
+| :--- | :--- | :--- | :--- |
+| **🏦 Bank Loan** | Credit Risk & Default Prediction | Income, Credit Score, Delinquency | Python, Pandas |
+| **🍿 Netflix** | User Retention & Churn Mitigation | Watch Hours, Regional Loyalty | Python, Pandas |
+| **🚗 Uber** | Urban Mobility & Demand Allocation | Geospatial Trip IDs, Fare Density | Tableau |
+| **🛍️ Blinkit** | Inventory Churn & SKU Popularity | SKUs, Delivery Lead Times | Spreadsheet |
 
 ---
 
