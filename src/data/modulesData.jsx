@@ -77,7 +77,7 @@ export const modules = [
     icon: <Play size={20} />,
     desc: 'Analyzing user behavior patterns, watch hours, and subscription types to predict and mitigate customer attrition.',
     images: ['/netflix/image1.png', '/netflix/image2.png', '/netflix/image3.png', '/netflix/image4.png', '/netflix/image5.png'],
-    link: 'pending',
+    link: 'https://github.com/Aman-kumar-git12/Data_Analysis-1/blob/main/notebooks/netflix.ipynb',
     themeColor: '#e50914',
     glowColor: 'rgba(229, 9, 20, 0.3)',
     bgColor: 'rgba(229, 9, 20, 0.03)',
