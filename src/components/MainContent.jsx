@@ -3,7 +3,8 @@ import {
   Edit2, BarChart2, PieChart, Map, Clock, Users, X, 
   ChevronLeft, ChevronRight, Layout, ExternalLink, 
   ShoppingBag, UserCircle, Car, Database, Layers, 
-  Table as TableIcon, FileSpreadsheet, Monitor, Landmark, Play
+  Table as TableIcon, FileSpreadsheet, Monitor, Landmark, Play,
+  Menu, Github, Search, Plus, CircleDot, GitPullRequest, BookOpen, Inbox
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ContributionGraph from './ContributionGraph';
@@ -173,9 +174,56 @@ const MainContent = () => {
     <div className="pt-6 space-y-6 relative">
       {/* Main Analysis Section */}
       <div className="border border-[#30363d] rounded-md overflow-hidden bg-[#0d1117]">
-        <div className="flex items-center justify-between px-4 py-2 border-b border-[#30363d] bg-[#0d1117]">
-          <span className="text-xs text-[#8b949e] font-mono">Aman-kumar-git12 / analytics-showcase.md</span>
-          <Edit2 size={14} className="text-[#8b949e] cursor-pointer hover:text-[#58a6ff]" />
+        {/* Real GitHub Header Recreation */}
+        <div className="flex items-center justify-between px-4 py-3 border-b border-[#30363d] bg-[#010409]">
+          <div className="flex items-center space-x-3">
+            <button className="p-1 hover:bg-[#21262d] rounded-md transition-colors text-[#7d8590]">
+              <Menu size={20} />
+            </button>
+            <Github size={24} className="text-white" />
+            <div className="flex items-center text-sm font-semibold whitespace-nowrap">
+              <span className="text-[#7d8590] hover:underline cursor-pointer">Aman-kumar-git12</span>
+              <span className="text-[#7d8590] mx-2">/</span>
+              <span className="text-[#e6edf3] hover:underline cursor-pointer">Data_Analysis-1</span>
+              <span className="ml-2 px-2 py-0.5 border border-[#30363d] rounded-full text-[12px] text-[#7d8590] font-medium">Public</span>
+            </div>
+          </div>
+
+          <div className="hidden md:flex items-center space-x-3">
+            <div className="relative group">
+              <div className="absolute left-3 top-1/2 -translate-y-1/2 text-[#7d8590]">
+                <Search size={14} />
+              </div>
+              <input 
+                type="text" 
+                placeholder="Type / to search" 
+                readOnly
+                className="bg-[#0d1117] border border-[#30363d] rounded-md pl-9 pr-2 py-1.5 text-xs w-64 text-[#7d8590] focus:outline-none focus:border-[#1f6feb] transition-all cursor-pointer"
+              />
+              <div className="absolute right-2 top-1/2 -translate-y-1/2 border border-[#30363d] rounded px-1.5 py-0.5 text-[10px] text-[#7d8590]">
+                /
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-1 border-l border-[#30363d] pl-3">
+              <button className="p-2 hover:bg-[#21262d] rounded-md transition-colors text-[#7d8590]">
+                <Plus size={16} />
+              </button>
+              <button className="p-2 hover:bg-[#21262d] rounded-md transition-colors text-[#7d8590]">
+                <CircleDot size={16} />
+              </button>
+              <button className="p-2 hover:bg-[#21262d] rounded-md transition-colors text-[#7d8590]">
+                <GitPullRequest size={16} />
+              </button>
+              <button className="p-2 hover:bg-[#21262d] rounded-md transition-colors text-[#7d8590]">
+                <BookOpen size={16} />
+              </button>
+              <button className="p-2 hover:bg-[#21262d] rounded-md transition-colors text-[#7d8590]">
+                <Inbox size={16} />
+              </button>
+              <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-[#7ee787] to-[#aff5b4] ml-2 cursor-pointer border border-white/10" title="User Profile"></div>
+            </div>
+          </div>
         </div>
 
         <div className="p-8 space-y-6">
