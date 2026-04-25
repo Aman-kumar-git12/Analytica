@@ -55,9 +55,9 @@ export const modules = [
     desc: 'Predictive modeling and risk assessment for personal loans, analyzing credit scores, income levels, and delinquency history.',
     images: ['/bank_loan/image1.png', '/bank_loan/image2.png', '/bank_loan/image3.png', '/bank_loan/image4.png', '/bank_loan/image5.png'],
     link: 'https://github.com/Aman-kumar-git12/Data_Analysis-1/blob/main/notebooks/eda.ipynb',
-    themeColor: '#238636',
-    glowColor: 'rgba(35, 134, 54, 0.3)',
-    bgColor: 'rgba(35, 134, 54, 0.03)',
+    themeColor: '#00c853',
+    glowColor: 'rgba(0, 200, 83, 0.3)',
+    bgColor: 'rgba(0, 200, 83, 0.03)',
     logo: '🏦',
     stack: ['Python', 'Pandas'],
     sampleData: {

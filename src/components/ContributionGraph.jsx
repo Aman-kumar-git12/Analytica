@@ -13,10 +13,10 @@ const ContributionGraph = () => {
   const getColor = (level) => {
     switch (level) {
       case 0: return 'bg-[#161b22]'; // None
-      case 1: return 'bg-[#0e4429]'; // Low
-      case 2: return 'bg-[#006d32]'; // Medium
-      case 3: return 'bg-[#26a641]'; // High
-      case 4: return 'bg-[#39d353]'; // Very High
+      case 1: return 'bg-[#004d40]'; // Low
+      case 2: return 'bg-[#00695c]'; // Medium
+      case 3: return 'bg-[#00897b]'; // High
+      case 4: return 'bg-[#00c853]'; // Very High
       default: return 'bg-[#161b22]';
     }
   };
@@ -69,10 +69,10 @@ const ContributionGraph = () => {
                 <div className="flex items-center space-x-1">
                   <span>Less</span>
                   <div className="w-[10px] h-[10px] rounded-[2px] bg-[#161b22]"></div>
-                  <div className="w-[10px] h-[10px] rounded-[2px] bg-[#0e4429]"></div>
-                  <div className="w-[10px] h-[10px] rounded-[2px] bg-[#006d32]"></div>
-                  <div className="w-[10px] h-[10px] rounded-[2px] bg-[#26a641]"></div>
-                  <div className="w-[10px] h-[10px] rounded-[2px] bg-[#39d353]"></div>
+                  <div className="w-[10px] h-[10px] rounded-[2px] bg-[#004d40]"></div>
+                  <div className="w-[10px] h-[10px] rounded-[2px] bg-[#00695c]"></div>
+                  <div className="w-[10px] h-[10px] rounded-[2px] bg-[#00897b]"></div>
+                  <div className="w-[10px] h-[10px] rounded-[2px] bg-[#00c853]"></div>
                   <span>More</span>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const ContributionGraph = () => {
               <div className="text-[10px] text-[#8b949e] uppercase tracking-wider">Total Contribs</div>
             </div>
             <div className="border border-[#30363d] rounded-md p-3 bg-[#0d1117] flex flex-col items-center justify-center text-center">
-              <Award size={20} className="text-[#39d353] mb-1" />
+              <Award size={20} className="text-[#00c853] mb-1" />
               <div className="text-xl font-bold text-white">28</div>
               <div className="text-[10px] text-[#8b949e] uppercase tracking-wider">Longest Streak</div>
             </div>
