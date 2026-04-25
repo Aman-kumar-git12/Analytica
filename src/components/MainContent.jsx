@@ -92,7 +92,7 @@ const MainContent = () => {
       title: 'Netflix Churn Prediction',
       icon: <Play size={20} />,
       desc: 'Analyzing user behavior patterns, watch hours, and subscription types to predict and mitigate customer attrition.',
-      images: ['/netflix/image1.png'],
+      images: ['/netflix/image1.png', '/netflix/image2.png', '/netflix/image3.png', '/netflix/image4.png', '/netflix/image5.png'],
       link: 'pending',
       themeColor: '#e50914',
       glowColor: 'rgba(229, 9, 20, 0.3)',
